@@ -10,7 +10,7 @@
 
 `docker run --env STREAM_LINK="" --env TELEGRAM_CHANNEL="" --env TELEGRAM_TOKEN="" datadiving/youtube-stream-notifier`
 
-**Links to repositories**
+**Links to repositories:**
 
 [GitHub repository](https://github.com/aleksandrgordienko/youtube-stream-notifier)
 
