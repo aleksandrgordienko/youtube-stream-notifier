@@ -11,11 +11,11 @@ CHECK_PERIODICITY = 60  # seconds
 
 def channel_is_live(link):
     try:
-        result = str(subprocess.call(['streamlink', link]))
+        result = str(subprocess.check_output(['streamlink', link]))
     except Exception as e:
         print(e)
 
-    if "Available streams:" in result:
+    if 'result' in locals() and "Available streams:" in result:
         return True
     else:
         return False
